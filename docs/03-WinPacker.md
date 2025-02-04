@@ -12,6 +12,8 @@ When launching WinPacker, it must take a file to pack. In some cases this file m
 ## Property Dialog
 Below is a screenshot of the property interface presented by WinPacker. This interface allows for the configuring of any and all properties that the packer needs. The packer is able to configure which properties are presented to the user, how they are grouped, and as the user changes parameters, handle validation of data and updating of any relevant properties, such as graying out properties that conflict with the current settings. After every time the packer is run, the last settings used will be saved so that they will be used as the default settings the next time that WinPacker is run with the same packer file. Therefore WinPacker will remember how you last ran a packing for a world file, and a model file, and any other resources supported. Each item of the property dialog will be described below.
 
+![WinPacker001](images/WinPacker001.jpg)
+
 ### The Property Panes
 Each packer has the option to group the properties that it contains into different panes. These panes serve only to help categorize properties and make their use easier and more intuitive. The same property can be listed on multiple panes, and in such a case changing the value on one pane will also change the value on any other panes that it is listed on. There can only be one active pane at a time, and it is that active pane’s properties that will be shown in the property area (2). Clicking on the name of a different property pane will change to that pane and allow editing of its properties.
 
@@ -29,6 +31,8 @@ Pressing this button will begin the packing process using the resource and prope
 
 ## Packing Dialog
 During the packing process, the packing dialog will be displayed. This allows the packer to communicate to the user what tasks it is performing, any issues that have arisen during packing, and also the overall progress of the packing process. This dialog does not require any user input, and is meant only to provide information to the user. Each component of the dialog will be described below.
+
+![WinPacker002](images/WinPacker002.jpg)
 
 ### Tasks
 The packer has the option to break apart the packing process into smaller pieces called tasks. Each task is generally much more specific, and only one task can be active at a time. This active task is controlled by the packer, and is usually performed in a sequential manner, so it will perform a task, move onto the next task, and so on. Messages can also be reported by the packer, and as these messages are reported, they are associated with the currently active task. So for example, if the current task is “creating polygons” and the packer reports how long it took, this message will be associated with the “creating polygons” task. The user can change the task that they are viewing by selecting a task from this list. This will change the messages listed to those related to the selected task in the messages window (2). The current task being viewed is the task in the list with they grey background behind it.
