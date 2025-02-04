@@ -67,7 +67,7 @@ The first line, [Mission], is a header used by the game to identify the relevant
 5. Browse to the folder that you copied the file to
 6. Select the TGA file you want to import. .
 7. Click “Open”.
-8. Left click on the newly Imported tga file and select "texture properties" from the list.
+8. Left click on the newly Imported tga file and select `texture properties` from the list.
 9. Change the compression checkbox from 32-bit to S3TC DTX1 (8x compression)
 10. Left click and select “Export as 8 bit dtx file”.
 
@@ -85,13 +85,13 @@ Before you can create asset lists, you will need to install the Perl programming
         errorlog 1 alwaysflushlog 1 showfileaccess 1
 2. Run the level you wish to build an asset list for. Make sure you do not use cheats and that you use everything available in the level (i.e., you listen to all conversations, activate every secret, use all available weapons/ammo types, set off any explosions, generate all debris available in the level, scroll through all HUD options, etc.)
 3. When you feel confident that you have done everything possible within the level that would require an asset of some sort to be loaded dynamically, quit the game without loading any additional levels.
-4. Rename the error.log file to the exact name of the level with a .log file extension (i.e. mylevel.log).
+4. Rename the error`.log` file to the exact name of the level with a `.log` file extension (i.e. `mylevel.log`).
 5. You will now need to manually edit the log file so that it only contains resources loaded after the level was completely loaded. Open the log file with a text editor and delete the following:
 
         All text prior to the line that reads something like: “Loaded world: Worlds\RetailSinglePlayer\mylevel in 3.87 seconds”
         Everything after the line that reads “World Ended”.
 6. Save your changes and exit the text editor.
-7. If for any reason you need to play through a level multiple times to ensure that all resources have been recorded, follow steps 1-6 again, making sure to rename each new log file appropriately. When done, you’ll need to create a single log file that combines the contents of all of the smaller files, and rename this to “mylevel.log”. You do not need to rearrange the contents of your log files in any particular manner, as all the matters is that the complete list of resources is contained in the file that you copy over in the next step.
+7. If for any reason you need to play through a level multiple times to ensure that all resources have been recorded, follow steps 1-6 again, making sure to rename each new log file appropriately. When done, you’ll need to create a single log file that combines the contents of all of the smaller files, and rename this to `mylevel.log`. You do not need to rearrange the contents of your log files in any particular manner, as all the matters is that the complete list of resources is contained in the file that you copy over in the next step.
 8. Copy the edited log file to the `Tools\AssetLists\logs\new folder`.
 9. Double click the `TO2\Development\Tools\AssetLists\BuildAssetLists.pl` script. When you run this script, the log file in the AssetLists\logs\new directory will be moved to the AssetLists\logs\processed directory and renamed based on the time/date. The log will then be processed and an intermediate file will be copied to `AssetLists\processing`. The final .txt version of the log fill will be copied to `AssetLists\final`.
 10)   Copy the `AssetLists\Final\levelname.txt` file into the `Game\Worlds\` directory associated with the level that was logged. For example, if the level was `Game\Worlds\RetailMultiPlayer\dm_mylevel.dat`, you would copy the `AssetLists\Final\dm_mylevel.txt` file to the `Game\Worlds\RetailMultiPlayer` folder.
