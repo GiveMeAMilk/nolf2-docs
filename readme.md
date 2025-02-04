@@ -13,7 +13,7 @@ Creating mods for No One Lives Forever 2 can be as easy as modifying a text file
 
 [**WinPacker**](docs/03-WinPacker.md) - This document will describe the capabilities and command line options for WinPacker.
 
-**Content Packs and Modifications** - This series of short tutorials covers the basics of creating map packs and other mods.
+[**Content Packs and Modifications**](docs/04-ContentPacksAndModifications.md) - This series of short tutorials covers the basics of creating map packs and other mods.
 
 **Creating the Demolition Mod Part I, Mod Components and Level Design** - This document will take you through the steps of creating the Demolition mod. It describes how to create and use the components necessary to add an entirely new gameplay mode to Nolf 2, and then package these components as prefabs for easy placement in levels.
 
