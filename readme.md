@@ -9,7 +9,7 @@ Creating mods for No One Lives Forever 2 can be as easy as modifying a text file
 ## Tutorials
 **Using Dedit to Create Worlds** - This document will introduce you to DEdit, LithTech’s primary level creation tool. It covers DEdit setup and configuration, basic level design, adding objects and prefabs, lighting, and other skills you’ll need to know in order to create good levels for Nolf 2. This document also features a description of each of the objects that can be placed within a level.
 
-**Processing Your Levels** - This document will answer the most commonly asked questions regarding how to use processor.exe to compile your DEdit worlds into usable levels.
+[**Processing Your Levels**](docs/02-ProcessingLevels.md) - This document will answer the most commonly asked questions regarding how to use processor.exe to compile your DEdit worlds into usable levels.
 
 [**WinPacker**](docs/03-WinPacker.md) - This document will describe the capabilities and command line options for WinPacker.
 
