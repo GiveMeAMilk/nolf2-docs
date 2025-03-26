@@ -25,7 +25,7 @@ Creating mods for No One Lives Forever 2 can be as easy as modifying a text file
 
 **Adding Vehicles** - Adding new vehicles to the game can only be accomplished through changes to the Nolf2 source. This tutorial will show you how.
 
-**Building the Nolf 2 Source** - This document will describe the necessary steps to build the No One Lives Forever 2 (NOLF2) game projects. You will need Microsoft Visual C++ 6.0 installed.
+[**Building the Nolf 2 Source**](docs/10-Building-NOLF2-Source.md) - This document will describe the necessary steps to build the No One Lives Forever 2 (NOLF2) game projects. You will need Microsoft Visual C++ 6.0 installed.
 
 
 ## Reference Documents
