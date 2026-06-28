@@ -1,44 +1,63 @@
+# No One Lives Forever 2 Documentation
 
-# No One Lives Forever 2 Editing Tools and Source Code Documentation
+This repository contains cleaned-up Markdown documentation for the editing tools, content workflows, and source-level customization options released for *No One Lives Forever 2*. Some topics are simple data and asset edits; others involve rebuilding tools or changing game code.
 
-**Introduction**
-
-Creating mods for No One Lives Forever 2 can be as easy as modifying a text file, or as difficult as adding features in the source code. The documentation contained in this release is provided as reference material for anyone interested in creating mods for Nolf2. The sections below will describe the various documents provided in this release and how they relate to one another.
-
+Use this page as the main guide to the documentation set.
 
 ## Tutorials
-**Using Dedit to Create Worlds** - This document will introduce you to DEdit, LithTech’s primary level creation tool. It covers DEdit setup and configuration, basic level design, adding objects and prefabs, lighting, and other skills you’ll need to know in order to create good levels for Nolf 2. This document also features a description of each of the objects that can be placed within a level.
 
-[**Processing Your Levels**](docs/02-ProcessingLevels.md) - This document will answer the most commonly asked questions regarding how to use processor.exe to compile your DEdit worlds into usable levels.
+- [Using DEdit to Create Worlds](docs/02-Using-DEdit-to-Create-Worlds.md)  
+  Introduction to DEdit, including setup, basic level construction, objects, prefabs, lighting, and world-building fundamentals.
 
-[**WinPacker**](docs/03-WinPacker.md) - This document will describe the capabilities and command line options for WinPacker.
+- [Processing Levels](docs/03-Processing-Levels.md)  
+  How to compile DEdit worlds into playable NOLF 2 levels with `processor.exe`.
 
-**Content Packs and Modifications** - This series of short tutorials covers the basics of creating map packs and other mods.
+- [WinPacker](docs/04-WinPacker.md)  
+  Overview of WinPacker, its interface, and its command-line options.
 
-**Creating the Demolition Mod Part I, Mod Components and Level Design** - This document will take you through the steps of creating the Demolition mod. It describes how to create and use the components necessary to add an entirely new gameplay mode to Nolf 2, and then package these components as prefabs for easy placement in levels.
+- [Content Packs and Modifications](docs/05-Content-Packs-and-Modifications.md)  
+  Packaging maps, mods, and custom resources for distribution.
 
-**Creating the Demolition Mod Part II, Source Code Modifications** - This document will show you how to modify the existing Nolf 2 source to support Demolition mode.
+- [Creating the Demolition Mod](docs/06-Creating-the-Demolition-mod.md)  
+  Building the Demolition gameplay mode, including its prefabs and level-side setup.
 
-**Adding and Modifying Weapons** - This document covers everything you need to know about modifying the Nolf2 weapons and adding new ones.
+- [Adding Demolition Mod to Source](docs/07-Adding-Demolition-Mod-to-Source.md)  
+  Source code changes required to support Demolition mode.
 
-**Working with character models** - If you plan on modifying or adding character models, this document will show you how. It covers everything from exporting models from Maya to editing them With ModelEdit.
+- [Adding and Modifying Weapons in No One Lives Forever 2](docs/08-Adding-and-Modifying-Weapons-in-No-One-Lives-Forever-2.md)  
+  Weapon editing, tuning, and new weapon creation.
 
-**Adding Vehicles** - Adding new vehicles to the game can only be accomplished through changes to the Nolf2 source. This tutorial will show you how.
+- [Working with models](docs/09-Working-with-models.md)  
+  Exporting, editing, and integrating character and model assets.
 
-**Building the Nolf 2 Source** - This document will describe the necessary steps to build the No One Lives Forever 2 (NOLF2) game projects. You will need Microsoft Visual C++ 6.0 installed.
+- [Changing and Adding Vehicles](docs/10-Changing-and-Adding-Vehicles.md)  
+  Vehicle-related changes that require code-side work.
 
+- [Building the No One Lives Forever 2 Game](docs/11-Building-the-No-One-Lives-Forever-2-Game.md)  
+  Building the NOLF 2 source with Microsoft Visual C++ 6.0.
 
 ## Reference Documents
-**Nolf 2 Command Architecture** - A wide variety of commands can be sent and received by most of the objects in the game. This document provides an overview of how commands are used.
 
-**Player Messages** - On-screen transmissions, skill rewards, music, and other aspects of gameplay are achieved through the use of commands sent to the player as a message. This document details all of the possible player messages and how to use them.
+- [Command Architecture](docs/12-Command-Architecture.md)  
+  Overview of the command system used by game objects and scripts.
 
-**AI Overview** - This document serves as an overview of AI systems. It also includes details regarding AI Nodes, Goals, SmartObjects, and other systems you’ll need to become familiar with before adding AI to your levels.
+- [Player Messages](docs/13-Player-Messages.md)  
+  Reference for gameplay messages sent to the player, including UI and feedback events.
 
-**AI Gameplay Setup** - Once you understand the basic AI systems, this document will provide further information on how to use these systems to create gameplay with your AI.
+- [NOLF2 AI](docs/14-NOLF2-AI.md)  
+  High-level overview of AI systems, nodes, goals, smart objects, and related concepts.
 
-**FXed Reference** - This document contains information regarding the use of FXed to modify and create special effects.
+- [NOLF2 AI Gameplay Setup](docs/15-NOLF2-AI-Gameplay-Setup.md)  
+  Practical guidance for setting up gameplay scenarios with AI.
 
-**Texture Scripts – Artist's Reference** - This document describes what textures scripts are for, and provides reference materials for artists who wish to use them.
+- [FxED](docs/16-FxED.md)  
+  Reference material for editing and creating special effects.
 
-**Texture Scripts – Engineering Reference** - This documents describes how texture scripts work, and how to build them.
+- [Texture Scripts For Artists](docs/17-Texture-Scripts-For-Artists.md)  
+  Artist-facing guide to texture scripts.
+
+- [Texture Scripts for Engineers](docs/18-Texture-Scripts-for-Engineers.md)  
+  Technical reference for how texture scripts work and how they are built.
+
+- [Player Movement](docs/19-Player-Movement.md)  
+  Reference material for player movement behavior and configuration.
